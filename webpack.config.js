@@ -1,3 +1,5 @@
+const webpack = require('webpack')
+
 module.exports = {
     "entry": "./app.es6",
     "devtool": "source-map",
@@ -13,5 +15,13 @@ module.exports = {
                 "loader": "babel"
             }
         ]
-    }
+    }//,
+    //plugins: [
+    //    new webpack.DefinePlugin({
+    //        'process.env': {
+    //            NODE_ENV: JSON.stringify('production')
+    //        }
+    //    }),
+    //    new webpack.optimize.UglifyJsPlugin({minimize: true})
+    //]
 }
