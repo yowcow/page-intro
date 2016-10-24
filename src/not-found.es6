@@ -1,4 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 
-module.exports = (el) => () => ReactDOM.render(<h1>404 Not Found</h1>, el)
+module.exports = React.createClass({
+    render() {
+        return (
+            <h1>Not Found です</h1>
+        )
+    }
+})
